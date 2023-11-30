@@ -1,386 +1,195 @@
 
-
 <!DOCTYPE html>
-<html lang="en" color-mode=light>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hexo</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="google" content="notranslate" />
-  
-  
-  <meta name="author" content="John Doe">
-  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
-  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
-  
-    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
-    <meta rel="msapplication-TileColor" content="#000000">
-  
-
-  
-<link rel="stylesheet" href="/css/style.css">
-
-
-  
+    <meta charset="UTF-8">
+    <title>Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
-
-  
-
-  
+        <link rel="icon" href="/favicon.ico">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-
-  
-
-  
     
-      
         
+            <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
-
-      
+            <link rel="stylesheet" href="/css/stage.css">
         
+            <link rel="stylesheet" href="/css/avatar-bg.css">
         
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
-
-      
-  
-
-  <script>
-    var CONFIG = window.CONFIG || {};
-    var ZHAOO = window.ZHAOO || {};
-    CONFIG = {
-      isHome: true,
-      fancybox: true,
-      pjax: false,
-      loading: {
-        gif: '/images/theme/loading.gif',
-        lottie: ''
-      },
-      lazyload: {
-        enable: true,
-        only_post: 'false',
-        loading: {
-          gif: '/images/theme/loading.gif',
-          lottie: ''
-        }
-      },
-      donate: {
-        enable: false,
-        alipay: 'https://pic.izhaoo.com/alipay.jpg',
-        wechat: 'https://pic.izhaoo.com/wechat.jpg'
-      },
-      galleries: {
-        enable: true
-      },
-      fab: {
-        enable: true,
-        always_show: false
-      },
-      carrier: {
-        enable: false
-      },
-      daovoice: {
-        enable: false
-      },
-      preview: {
-        background: {
-          default: '',
-          api: ''
-        },
-        motto: {
-          default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
-        },
-      },
-      qrcode: {
-        enable: true,
-        type: 'url',
-        image: 'https://pic.izhaoo.com/weapp-code.jpg',
-      },
-      toc: {
-        enable: true
-      },
-      scrollbar: {
-        type: 'default'
-      },
-      notification: {
-        enable: false,
-        delay: 4500,
-        list: '',
-        page_white_list: '',
-        page_black_list: ''
-      },
-      search: {
-        enable: false,
-        path: ''
-      }
-    }
-  </script>
-
-  
-
-  
-
+    
 <meta name="generator" content="Hexo 7.0.0"></head>
 
-<body class="lock-screen">
-  <div class="loading" id="loading"></div>
-  
-    
-
-
-  <nav class="navbar">
-    <div class="left">
-      
-      
-        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-      
+<body>
+<header id="header">
+    <div class="menu">
+        <i class="fa fa-bars"></i>
     </div>
-    <div class="center"> </div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
+    <div class="header-main">
+        <h1><a href="/">Hexo</a></h1>
     </div>
-    
-      <div id="qrcode-navbar"></div>
-    
-  </nav>
-
-  
-  
-
-<nav class="menu">
-  <div class="menu-container">
-    <div class="menu-close">
-      <i class="iconfont iconbaseline-close-px"></i>
-    </div>
-    <ul class="menu-content"><li class="menu-item">
-        <a href="/ " class="underline active"> 首页</a>
-      </li><li class="menu-item">
-        <a href="/galleries/ " class="underline "> 摄影</a>
-      </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
-      </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
-      </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
-      </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
-      </li></ul>
-    
-      <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
-    
-  </div>
-</nav>
-  <main id="main">
-  
-    <div class="preview">
-  <!-- <nav class="navbar j-navbar-menu">
-    <i class="iconfont iconmenu"></i>
-  </nav> -->
-  <div class="preview-image">
-    
-        
-              <div class="preview-overlay">
-                <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                  <defs>
-                    <path id="gentle-wave"
-                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                  </defs>
-                  <g class="preview-parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(var(--color-background-rgb),0.7"></use>
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(var(--color-background-rgb),0.5)"></use>
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(var(--color-background-rgb),0.3)"></use>
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--color-background)"></use>
-                  </g>
-                </svg>
-              </div>
-              
-  </div>
-  <div class="preview-motto-wrapper">
-    <h2 class="preview-motto" id="motto">
-      
-    </h2>
-    
-      <span class="preview-cursor">_</span>
-      
-  </div>
-  <div class="preview-scroll">
-    <a href="#container" class="smooth-scroll"><i class="iconfont iconMouse"></i></a>
-  </div>
-</div>
-  
-  <div class="container" id="container">
-    <section class="row post">
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2023/11/26/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" class="post-image">
-      <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2023/11/26/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历" >个人简历</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">尊敬的招聘人员：
-您好！我是一名专业的XXX，非常感兴趣并热爱您们的公司，我希望在这里能够得到一份工作，发挥自己的才能，为公司的发展做出自己的贡献。
-教育背景：
-201X年-201X年 XXX大...</p>
+    <div id="nav">
+        <div class="nav-img" id="nav-img"></div>
+        <div class="sentences">
+            时光荏苒，旦夕之间，略有遗憾，似白驹过隙，蹉跎自悟。
         </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 26, 2023</span>
-        
-      </div>
     </div>
-  </div>
+</header>
+
+<div id="content-outer">
+    <div id="content-inner">
+        <div class="clearfix">
+    
+    <div id="recent-posts">
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2023/11/26/个人简历/">
+                        个人简历
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2023-11-26T13:35:05.000Z">
+                            2023-11-26
+                        </time>
+                    
+                    
+                </div>
+                
+                    <p>尊敬的招聘人员：</p>
+<p>您好！我是一名专业的XXX，非常感兴趣并热爱您们的公司，我希望在这里能够得到一份工作，发挥自己的才能，为公司的发展做出自己的贡献。</p>
+<p>教育背景：</p>
+<p>201X年-201X年 XXX大学 本科&#x2F;XXX专业 GPA: 3.8&#x2F;4 （专业前5%）校一等奖学金（201X）</p>
+<p>201X年-201X年 XXX大学 硕士&#x2F;XXX专业 GPA: 3.9&#x2F;4（专业前3%）校特等奖学金（201X）</p>
+<p>工作经历：</p>
+<p>201X年-至今 XXX公司 实习生&#x2F;XXX部门</p>
+<ul>
+<li>参与了XXX项目的开发，主要负责XXX模块的设计和实现，最终成功完成了项目并获得了客户的好评。</li>
+<li>在团队中主动沟通，与同事合作愉快，积极参与团队讨论和分享会。</li>
+<li>充分利用业余时间学习新技术和知识，提高自己的专业能力。</li>
+</ul>
+<p>201X年-至今 XXX公司 软件开发工程师&#x2F;XXX部门</p>
+<ul>
+<li>负责XXX项目的核心代码编写和维护，确保代码质量和性能达到最佳状态。</li>
+<li>与产品经理、设计师紧密合作，完成需求分析、方案设计、编码测试等工作。</li>
+<li>参与公司内部技术分享会，与同事分享编程经验和技巧。</li>
+</ul>
+<p>技能：</p>
+<ul>
+<li>熟悉Java、Python、C++等编程语言，有良好的编程习惯和代码风格。</li>
+<li>熟悉Web前端技术，包括HTML、CSS、JavaScript等。</li>
+<li>熟练使用Git、SVN等版本控制工具。</li>
+<li>具有良好的团队协作精神和沟通能力，能够快速适应新环境和学习新技术。</li>
+</ul>
+<p>自我评价：</p>
+<p>我是一个热爱学习、工作认真、有责任心的XXX。在工作中，我注重团队合作和沟通，能够快速融入新环境并解决各种问题。同时，我也拥有较强的自我驱动力和学习能力，能够不断探索新技术和新领域，提高自己的专业水平。我相信在贵公司能够得到更好的发展机会和平台，为公司的发展做出自己的贡献。</p>
+
+                
+                <div class="readmore">
+                    <a href="/2023/11/26/个人简历/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        
+    </div>
+
+
+    <div id="content-aside">
+    <div class="content-aside-owner">
+        <div id="owner">
+    <div class="avatar-bg">
+        <div class="index-page">
+            <div class="banner">
+                <div class="slide slide1">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_left">
+                            <div id="canvas_left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_right">
+                            <div id="canvas_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/"><img class="avatar" src="/images/avatar.jpg" alt=""></a>
+    <a href="/"><h3 class="author">John Doe</h3></a>
+    <h4></h4>
+    <div class="social">
+        
+            
+              <a href="https://github.com/markyong" title="github" class="fa fa-github" target="_blank"></a>
+            
+        
+            
+              <a href="#" title="weibo" class="fa fa-weibo" target="_blank"></a>
+            
+        
+    </div>
+</div>
+    </div>
+    
+        <div class="content-aside-about">
+            <h2>
+                <a href="/about">About</a>
+            </h2>
+        </div>
+    
+    <div class="content-aside-tags">
+        <h2>
+            <a href="/tags">
+                Tags
+                <sup style="font-size: 12px">
+                    [0]
+                </sup>
+            </a>
+        </h2>
+    </div>
+    
+<aside id="categories">
+    <h2>Categories</h2>
+    
+        <p>None.</p>
+    
+</aside>
+
+    
+<aside id="acchives">
+    <h2>Archives</h2>
+    
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    
+</aside>
+
 </div>
 
-  
-</section>
-    <section class="paginator">
-  
-</section>
-  </div>
-</main>
-  
+</div>
+<nav id="pagination" class="clearfix">
+    <span class="page-number current">1</span>
+</nav>
 
-<footer class="footer">
-  <div class="footer-social"><a 
-        href="tencent://message/?Menu=yes&uin=894519210 "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#12B7F5'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconQQ "></i>
-      </a><a 
-        href="javascript:; "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#09BB07'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconwechat-fill "></i>
-      </a><a 
-        href="https://www.instagram.com/izhaoo/ "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#DA2E76'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconinstagram "></i>
-      </a><a 
-        href="https://github.com/zhaoo "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#9f7be1'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  icongithub-fill "></i>
-      </a><a 
-        href="mailto:izhaoo@163.com "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color=#FF3B00" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconmail"></i>
-      </a></div>
-  
-    <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
-  
+    </div>
+</div>
+<footer id="footer">
+    <div id="copyright">&copy; John Doe  2023</div>
+    <div id="theme">
+        Powered by <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="https://github.com/markyong/hexo-theme-stage">Stage</a>
+    </div>
 </footer>
-  
-      <div class="fab fab-plus">
-    <i class="iconfont iconplus"></i>
-  </div>
-  
-  
-  
-  <div class="fab fab-up">
-    <i class="iconfont iconcaret-up"></i>
-  </div>
-  
-  
-  
-    
-<script src="/js/color-mode.js"></script>
+<script src="/lib/js/waterrippleeffect.min.js"></script>
+<script src="/js/header-bg.main.js"></script>
 
-  
-  
+    <script src="/lib/js/cav.js"></script>
+    <script src="/js/avatar-bg.main.js"></script>
+
 </body>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-
-
-
-
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
-
-
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-
-
-
-
-<script src="/js/utils.js"></script>
-<script src="/js/script.js"></script>
-
-
-
-
-
-
-
-  <script>
-    (function () {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
